@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+
+<html>
+<body>
+<h1> Dillon's Guessing Game </h1>
+<p>Guess the number I am thinking of between 1 and 10</p>
+
+
+<input type="text" id="guessInput"> </input>
+<button type="button" id="randomGen" onclick="guessingGame()"> Submit </button>
+<p id="hint">  </p>
+
+
+<script>
+
+var randomNumber = Math.floor((Math.random() * 10) + 1);
+var guess = document.getElementById("hint");
+
+function guessingGame(){
+
+var input = parseInt(document.getElementById("guessInput").value);
+
+if (input > randomNumber){
+guess.innerHTML="Too high";
+}
+
+else if (input < randomNumber) {
+guess.innerHTML="Too low";
+}
+
+else if(input === randomNumber) {
+guess.innerHTML="You win";
+}
+}
+</script>
+</body>	
+</html>

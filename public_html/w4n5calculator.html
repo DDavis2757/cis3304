@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>   
+       <script>
+	   function textDisplay(num){
+	   output.value=output.value+num;
+	   }
+	   function getEval(equ){
+	   output.value = eval(equ); }
+	   </script>
+    </head>
+    <body>
+        <input type="text" id="output"> <br>
+        <input type ="button" id="one" value="1" onclick="textDisplay(one.value)">
+        <input type ="button" id="two" value="2" onclick="textDisplay(two.value)">
+        <input type ="button" id="three" value="3" onclick="textDisplay(three.value)">
+		<input type ="button" id="add" value="+" onclick="textDisplay(add.value)">
+		<input type ="button" id="subtract" value="-" onclick="textDisplay(subtract.value)">
+		<br>
+        <input type ="button" id="four" value="4" onclick="textDisplay(four.value)">
+        <input type ="button" id="five" value ="5" onclick="textDisplay(five.value)">
+        <input type ="button" id="six" value="6" onclick="textDisplay(six.value)">
+		<input type ="button" id="multiply" value="*" onclick="textDisplay(multiply.value)">
+		<input type ="button" id="divide" value="%" onclick="textDisplay(divide.value)">
+		<br>
+        <input type ="button" id="seven" value ="7" onclick="textDisplay(seven.value)">
+        <input type ="button" id="eight" value = "8" onclick="textDisplay(eight.value)" >
+        <input type ="button" id="nine" value = "9" onclick="textDisplay(nine.value)">
+		<input type ="button" id="equals" value="=" onclick="getEval(output.value)">
+		<br>
+		<input type ="button" id="zero" value = "0" onclick="textDisplay(zero.value)">
+		<input type = "button" id="clear" value = "C" onclick="output.value=''";
+    </body>
+</html>
